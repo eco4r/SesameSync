@@ -1,0 +1,20 @@
+Project: SesameSync
+===================
+Subproject of:        eco4r - Exposing Compound Objects for Repositories
+Web Page:             http://www.eco4r.org
+version: 	      0.1beta
+Fedora Versions:      3.3 and 3.4
+Funded By:            DFG - German Research Foundation
+Co-operation:         HBZ NRW & University Library Bielefeld
+Documentation site:   http://trac.eco4r.org/trac/eco4r/wiki/OverlayJournal/SesameDbSynch
+Developer:            Anouar Boulal publikationssysteme@hbz-nrw.de
+
+
+-------------------- 
+The Persistence Layer of the eco4r overlay journal consists of 2 tiers, an RDF Triplestore and a Relational Database. 
+The triples in the OAI-ORE Resource Maps that have been harvested beforehand are Stored in the  Sesame Triplestore. 
+For the overlay journal, Sesame is the main persistence unity. 
+However, to augment the performance of fetching information from the overlay journal a kind of caching system on top of Sesame is required. 
+For this purpose we decided to include a MySQL database that holds a summary of the information stored in Sesame.
+
+THIS PIECE OF SOFTWARE IS IN BETA STAGE
